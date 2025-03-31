@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MadThunder Widget</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .twitch-widget {
+      display: flex;
+      align-items: center;
+      font-family: 'Russo One', sans-serif;
+      font-size: 48px;
+      color: #fff;
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+      padding: 20px 50px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(145, 71, 255, 0.5);
+      border: 4px solid #fff;
+      animation: glow 2s infinite alternate;
+      gap: 20px;
+    }
+
+    .twitch-logo {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+      margin-left: -10px;
+    }
+
+    .divider {
+      width: 4px;
+      height: 60px;
+      background-color: white;
+      border-radius: 2px;
+    }
+
+    .twitch-widget div:last-child {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      -webkit-text-stroke: 1px #000;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px rgba(145, 71, 255, 0.4);
+      }
+      to {
+        box-shadow: 0 0 30px rgba(145, 71, 255, 1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="twitch-widget">
+    <img src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png" alt="Twitch Logo" class="twitch-logo">
+    <div class="divider"></div>
+    <div>foxwthunder</div>
+  </div>
+</body>
+</html>
